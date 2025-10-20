@@ -75,11 +75,11 @@ A brief description of your changes and purpose.
 1. `git checkout dev`
 2. `git pull origin dev`
 3. `git checkout -b feature/navbar`
-# make changes
-4. `git add .`
-5. `git commit -m "Add: responsive navbar component"`
-6. `git pull origin dev`
-7. `git push origin feature/navbar`
-8. open PR to dev
+4.  make your changes
+5. `git add .`
+6. `git commit -m "Add: responsive navbar component"`
+7. `git pull origin dev`
+8. `git push origin feature/navbar`
+9. open PR to dev
 
 Happy Coding!
