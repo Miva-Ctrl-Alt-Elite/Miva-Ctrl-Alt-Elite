@@ -47,7 +47,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     color: var(--color-text);
-    margin-top: var(--spacing-lg);
+    margin-top: var(--spacing-sm);
     margin-bottom: var(--spacing-sm);
 }
 
@@ -70,14 +70,6 @@ h1, h2, h3, h4, h5, h6 {
 .card:hover {
     transform: translateY(-3px); /* Consistent lift on hover */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-img-top {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: calc(var(--border-radius) - 0.125rem);
-    margin-bottom: var(--spacing-sm);
 }
 
 /* --- 4. SHARED COMPONENTS: BUTTONS (Ensures consistent width, height, and responsiveness) --- */
@@ -168,10 +160,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
 }
 
-.modal-overlay.is-open .modal-content {
-    transform: scale(1);
-}
-
 /* Consistent style for the close button within the modal */
 .modal-close-btn {
     position: absolute;
@@ -194,7 +182,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Page Wrapper: Used to constrain the overall content width and center it on large screens. */
 .page-wrapper {
-    max-width: 1280px; /* Consistent max width for content readability on desktop */
+    max-width: 1440px; /* Consistent max width for content readability on desktop */
     margin: 0 auto; /* Center the wrapper horizontally */
     padding: 0 var(--spacing-md); /* Consistent horizontal padding for mobile/tablet */
 }
