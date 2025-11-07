@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <title>Upcoming Events | The Monarch</title>
+        <link rel="stylesheet" href="../monarch_utilities.css">
+    </head>
+    <body>
+        <!--Marquee-->
+        <marquee behavior="scroll"
+        direction="left" scrollamount="6">
+    Upcoming Events: The Monarch Fashion Week - Dec 15 | Pop-Up Store Opening - Jan 10 | New Collection Launch - Feb 5</marquee>
+    
+    <!-- Navigation bar -->
+     <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="board.html">Board of Trustees</a></li>
+            <li><a href="events.html"
+            class="active">Events</a></li>
+        </ul>
+     </nav>
+
+     <!-- Page Header -->
+      <header>
+        <h1>Upcoming Events</h1>
+        <p>Stay tuned for our latest showcases and fashion experiences.</p>
+      </header>
+
+      <!-- Events section -->
+       <section id="events-list">
+        <div class="event-card">
+            <h2>The Monarch Fashion Week</h2>
+            <p>Date: December 15, 2025</p>
+            <p>Location: Lagos, Nigeria</p>
+            <button class="btn">Learn More</button>
+        </div>
+
+        <div class="event-card">
+            <h2>Pop-Up Store Opening</h2>
+            <p>Date: January 10, 2026</p>
+            <p>Location: Abuja, Nigeria</p>
+            <button class="btn">Learn More</button>
+        </div>
+
+        <div class="event-card">
+            <h2>New Collection Launch</h2>
+            <p>Date: February 5, 2026</p>
+            <p>Location: Port Harcourt, Nigeria</p>
+            <button class="btn">Learn More</button>
+        </div>
+       </section>
+
+       <!-- Simple JavaScript feature -->
+        <script>
+            // JavaScripts feature: highlight event cards when clicked
+            const cards = 
+            document.querySelectorAll('.event-card');
+            cards.forEach(card => {
+                card.addEventListener('click', () => 
+                {
+                    card.classList.toggle('highlight');
+                });
+                });     
+            </script>
+</body>
+</html>
