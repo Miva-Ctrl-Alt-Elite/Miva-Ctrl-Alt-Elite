@@ -6,7 +6,7 @@
 
 /* ---------- PAGE HEADER ---------- */
 .board-header {
-    text-align: center;
+    text-align: left;
     max-width: 850px;
     margin: 0 auto;
     padding-top: var(--spacing-xl);
@@ -20,12 +20,11 @@
     margin-bottom: var(--spacing-xs);
 }
 
-.board-header p {
+.board-header p.board-p {
     font-family: var(--font-body);
     font-size: 1rem;
     line-height: 1.7;
     opacity: 0.9;
-    margin: 0 auto;
     max-width: 700px;
     text-align: left;
 }
@@ -35,7 +34,7 @@
     height: 4px;
     background-color: var(--color-gold);
     border: none;
-    margin: var(--spacing-sm) auto;
+    margin: var(--spacing-sm) 0;
     border-radius: var(--border-radius);
 }
 /* ---------- TEAM GRID ---------- */
@@ -121,11 +120,6 @@
     opacity: 0;
     visibility: hidden;
     transition: opacity var(--transition-speed) ease;
-}
-
-.modal-overlay.is-open {
-    opacity: 1;
-    visibility: visible;
 }
 
 .modal-content {
