@@ -21,7 +21,7 @@ const members = {
     name: "Michael Princewill",
     role: "Developer",
     bio: "Michael implemented the Global Navigation Bar and Footer, ensuring consistent link structures and smooth navigation across all pages.",
-    img: "../no-profile-pic.png"
+    img: "Images/MICHAEL_PRINCEWILL.PNG"
   },
   5: {
     name: "Woyengitari Olori",
@@ -45,7 +45,7 @@ const members = {
     name: "Ojeabuo Destiny (Richies)",
     role: "JavaScript Interactivity Engineer",
     bio: "Richies developed site-wide JavaScript features, including the global marquee and various dynamic interactive elements.",
-    img: "../no-profile-pic.png"
+    img: "Images/OJEABUO EMMANUEL (Richies).jpg"
   },
   9: {
     name: "Precious Ukachukwu",
@@ -57,7 +57,7 @@ const members = {
     name: "Prosper Oseghale",
     role: "Documentation Specialist",
     bio: "Prosper prepared the project README and technical documentation, illustrating the website’s structure using the Document Object Model (DOM).",
-    img: "../no-profile-pic.png"
+    img: "Images/Prosper OSEGHALE(Minnie Oladepo).jpg"
   },
   11: {
     name: "Samuel Oyingoke",
@@ -69,7 +69,7 @@ const members = {
     name: "Vanessa Omobo",
     role: "Developer",
     bio: "Vanessa designed and developed the Home Page, including the hero section, featured products area, and the introductory layout for a strong first impression.",
-    img: "../no-profile-pic.png"
+    img: "Images/Vanessa Omobo.jpg"
   }
 };
 
