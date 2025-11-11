@@ -9,7 +9,7 @@ const members = {
     name: "Anita Chukwuma",
     role: "Developer",
     bio: "Anita developed the Products Showcase Page, focusing on layout structure, interactivity, and responsive presentation of product details.",
-    img: "../no-profile-pic.png"
+    img: "Images/Anita Professional Pic .jpg"
   },
   3: {
     name: "Diamond Angel",
@@ -63,7 +63,7 @@ const members = {
     name: "Samuel Oyingoke",
     role: "Developer",
     bio: "Samuel supported the Product Showcase Page by improving its responsive layout and wiring up the product details modal for better user interaction.",
-    img: "../no-profile-pic.png"
+    img: "Images/Samuel Oyingoke.jpg"
   },
   12: {
     name: "Vanessa Omobo",
