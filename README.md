@@ -1,85 +1,90 @@
 # Miva-Ctrl-Alt-Elite
 
-## Contribution Guide
+### Overview
+This project **The Monarch** is a **responsive 5-paged e-commerce website** to showcase a fashion brand's collections, introduce it's team, highlight upcoming events, and allow visitors to easily book appointments or enquiries. The website provides a smooth user journey across multiple pages, from the home page to product showcases, team profiles, event listings, and contact forms while maintaining consistent navigation, visual appeal and clear call-to-action elements throughout.
 
-All collaborators have direct access to the repository. Please follow these steps to contribute:
-
-### 1. Clone the Repository
-Clone the repository to your local machine:
-
-```sh
-git clone https://github.com/Miva-Ctrl-Alt-Elite/Miva-Ctrl-Alt-Elite.git
-cd Miva-Ctrl-Alt-Elite
-```
-
-### 2. Create a Branch
-Always Create a new branch for your feature or fix:
-
-```sh
-git checkout -b feature/your-feature-name
-```
-Use clear, descriptive names (e.g., feature/navbar, fix/contact-form, update-readme)
-
-### 3. Make Your Changes
-Edit or add HTML, CSS, or JavaScript files as needed.
-
-### 4. Commit Your Changes
-Stage and commit your changes with a clear message:
-
-```sh
-git add .
-git commit -m "Describe your changes"
-```
-Follow the convention:
-Type: short description (e.g., Fix: broken link in footer, Feat: about page layout)
-
-### 5. Pull Latest from dev (Avoid Merge Conflicts)
-Before pushing your branch, always make sure your branch is up to date with the latest `dev` branch to avoid merge conflicts:
-
-```sh
-git pull origin dev
-```
-
-If conflicts occur:
-
-- Resolve them manually.
-
-- Test the changes.
-
-- Commit the resolved files.
-
-### 6. Push Your Branch
-Push your branch to the shared repository:
-
-```sh
-git push origin feature/your-feature-name
-```
-
-
-### 7. Open a Pull Request (PR)
-Navigate to the repository on GitHub.
-
-Open a Pull Request from your branch e.g `feature/your-feature-name` → `dev`.
-
-Include:
-
-A clear title (e.g., Add carousel to homepage)
-
-A brief description of your changes and purpose.
 
 ---
-**Important Tips:**
-- Always pull the latest changes from the `dev` branch before starting new work.
 
-### Workflow summary
-1. `git checkout dev`
-2. `git pull origin dev`
-3. `git checkout -b feature/navbar`
-4.  make your changes
-5. `git add .`
-6. `git commit -m "Add: responsive navbar component"`
-7. `git pull origin dev`
-8. `git push origin feature/navbar`
-9. open PR to dev
 
-Happy Coding!
+### Table of Contents 
+* [Overview](#overview)
+* [Screenshots](#screenshots)
+* [Features](#features)
+* [Technologies Used](#-technologies-used)
+* [DOM Structure](#dom-structure)
+* [How to Run](#-how-to-run)
+* [Acknowledgements](#acknowledgements)
+
+
+---
+
+
+### Screenshots
+
+#### Home Page
+![Home Page](screenshots/home.png)
+
+
+---
+
+### Features
+-  **Responsive Design:** Seamlessly adapts to all devices including mobile, tablet, and desktop.
+- **Interactive Elements:** Engaging carousels,hover effects, and click interactions to enhance user experience.
+- **Product Showcase:** Grid layout with organized categories, images, descriptions, and quick access to booking or contact options.
+- **Team & Brand Highlights:** Grid layout for team member photos with clear representation of roles and mission; click to reveal short biographies for each member.
+- **Event Updates:** Countdown timers and scrolling marquees to keep visitors informed about upcoming events.
+- **Contact and Appointment:** User-friendly forms for inquiries and appointment bookings featuring validation with success or error alerts
+- **Consistent Navigation & Layout:** Persistent navbar and footer across all pages, including active link highlights for easy navigation
+- **Accessibility and Visual Appeal:** Designed with readability, contrast, and interactive visual elements in mind.
+
+
+---
+
+
+## Technologies Used
+- **HTML5** 
+- **CSS** 
+- **Vanilla JavaScript**
+- **Git & Github**
+- **Figma** 
+
+
+---
+
+
+## DOM Structure
+
+
+
+---
+
+
+---
+
+
+## How to Run
+1. **Clone this repository** 
+```bash
+   git clone https://github.com/Miva-Ctrl-Alt-Elite/Miva-Ctrl-Alt-Elite
+```
+   
+
+2. Navigate into the project folder
+```bash
+    cd Miva-Ctrl-Alt-Elite
+ ```
+
+3. Open the website
+- Double-click index.html in your file explorer or
+- Use Live Server in VS Code for live preview
+
+
+---
+
+
+## Acknowledgements
+We would like to thank all team members who contributed to this project for their effort and collaboration.
+
+
+
