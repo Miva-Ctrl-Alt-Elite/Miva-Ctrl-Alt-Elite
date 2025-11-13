@@ -1,4 +1,4 @@
-# Miva-Ctrl-Alt-Elite
+## Documentation
 
 ### Overview
 This project **The Monarch** is a **responsive 5-paged e-commerce website** to showcase a fashion brand's collections, introduce it's team, highlight upcoming events, and allow visitors to easily book appointments or enquiries. The website provides a smooth user journey across multiple pages, from the home page to product showcases, team profiles, event listings, and contact forms while maintaining consistent navigation, visual appeal and clear call-to-action elements throughout.
