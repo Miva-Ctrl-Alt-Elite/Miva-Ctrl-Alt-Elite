@@ -1,59 +1,152 @@
-/* File: CSS/event-page.css */
-
-
-.page-title{
-    font-size: 2.25rem;
-    color: var(--color-burgundy);
-    margin: 1.5rem 0;
+.page-title {
+  font-size: 2.25rem;
+  color: var(--color-burgundy);
+  margin: 1.5rem 0;
 }
 
-.site-header{
-    border-bottom: 1px solid
-    rgba(0,0,0,0.05);
-}
-.nav-wrapper{display:flex;align-items:center;justify-content:space-between;padding:1rem 0}
-.brand
-a{font-size:1.25rem;color:var(--color-burgundy);text-decoration:none}
-.main-nav
-a{margin-left:1rem;text-decoration:none;color:var(--color-text);font-weight:600}
-.main-nav
-a.active{color:var(--color-burgundy)}
-
-.marquee-wrap marquee{
-    display:block;
-    padding:0.5rem 1rem;
-    color:var(--color-cream);
-    background-color:var(--color-burundy);
-    font-weight:600;
+.site-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-#countdown-section{display:flex;gap:1.25rem;align-items:center}
-.event-img{width:320px;height:180px;object-fit:cover;border-radius:0.5rem;background:#eee}
-#countdown-timer{font-size:1.25rem;margin-top:0.5rem}
-.countdown-actions{margin-top:1rem;display:flex;gap:0.75rem}
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
 
-.evemts-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:1.5rem;margin-top:1rem}
-.event-card .card-media
-img{width:100%;height:180px;object-fit:cover;border-radius:0.5rem}
-.card-body{padding-top:0.75rem}
-.muted{color:rgba(0,0,0,0.06);font-size:0.9rem}
-.excerpt{margin:0.5rem 0}
-.card-actions{display:flex;gap:0.5rem;margin-top:0.5rem}
+.brand a {
+  font-size: 1.25rem;
+  color: var(--color-burgundy);
+  text-decoration: none;
+}
 
-.past-grid{display:flex;gap:1rem;flex-wrap:wrap}
-.small-card{width:200px;padding:0.5rem}
-.small-card
-img{width:100%;height:100px;object-fit:cover;border-radius:0.35rem}
+.main-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 600;
+}
 
-.primary-btn{background-color:var(--color-burgundy);color:var(--color-cream)}
-.secondary-btn{color:var(--color-burgundy);border:1px solid var(--color-gold)}
+.main-nav a.active {
+  color: var(--color-burgundy);
+}
 
-.site-footer{background:var(--color-burgundy);color:var(--color-cream);padding:2rem 0;margin-top:2rem}
-.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.marquee-wrap marquee {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--color-cream);
+  background-color: var(--color-burgundy);
+  font-weight: 600;
+}
 
+#countdown-section {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
 
+.event-img {
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  background: #eee;
+}
 
-@media (max-width:700px){
-    .event-preview{flex-direction:column}
-    .event-img{width:100%;height:220px}
+#countdown-timer {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.countdown-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.event-card .card-media img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.card-body {
+  padding-top: 0.75rem;
+}
+
+.muted {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 0.9rem;
+}
+
+.excerpt {
+  margin: 0.5rem 0;
+}
+
+.card-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  justify-content: center;
+  
+}
+
+.past-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.small-card {
+  width: 200px;
+  padding: 0.5rem;
+}
+
+.small-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.35rem;
+}
+
+.primary-btn {
+  background-color: var(--color-burgundy);
+  color: var(--color-cream);
+}
+
+.secondary-btn {
+  color: var(--color-burgundy);
+  border: 1px solid var(--color-gold);
+}
+
+.site-footer {
+  background: var(--color-burgundy);
+  color: var(--color-cream);
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .event-preview {
+    flex-direction: column;
+  }
+  .event-img {
+    width: 100%;
+    height: 220px;
+  }
 }
