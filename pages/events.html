@@ -1,70 +1,171 @@
-<!DOCTYPE html>
+<!-- File: pages/event.html -->
+<!doctype html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
-        <title>Upcoming Events | The Monarch</title>
-        <link rel="stylesheet" href="../monarch_utilities.css">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title> The Monarch - Events</title>
+
+        <!-- External shared base CSS -->
+         <link rel="stylesheet" href="monarch_utilities.css">
+         <!-- Page specific CSS -->
+          <link rel="stylesheet" href="events.css">
     </head>
     <body>
-        <!--Marquee-->
-        <marquee behavior="scroll"
-        direction="left" scrollamount="6">
-    Upcoming Events: The Monarch Fashion Week - Dec 15 | Pop-Up Store Opening - Jan 10 | New Collection Launch - Feb 5</marquee>
-    
-    <!-- Navigation bar -->
-     <nav class="navbar">
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="board.html">Board of Trustees</a></li>
-            <li><a href="events.html"
-            class="active">Events</a></li>
-        </ul>
-     </nav>
+        <!-- SITE NAVIGATION -->
+         <header class="site-header">
+            <div class="page-wrapper nav-wrapper">
+                <div class="brand">
+                    <a href="..index.html">The Monarch</a>
+                </div>
+                <nav class="main-nav">
+                    <a href="../index.html">Home</a>
+                    <a href="../products.html">Products</a>
+                    <a href="events.html"
+                    class="active">Events</a>
+                    <a href="..trustees.html">Board of Trustees</a>
+                    <a href="../inquiries.html">Inquiries</a>
+                </nav>
+            </div>
 
-     <!-- Page Header -->
-      <header>
-        <h1>Upcoming Events</h1>
-        <p>Stay tuned for our latest showcases and fashion experiences.</p>
-      </header>
+            <!-- MAIN PAGE CONTENT -->
+             <main class="page-wrapper section-wrapper" id="main">
+                <h1 class="page-title">Events</h1>
 
-      <!-- Events section -->
-       <section id="events-list">
-        <div class="event-card">
-            <h2>The Monarch Fashion Week</h2>
-            <p>Date: December 15, 2025</p>
-            <p>Location: Lagos, Nigeria</p>
-            <button class="btn">Learn More</button>
-        </div>
+                <!-- COUNTDOWN -->
+                 <section id="countdown-section"
+                 class="countdown card">
+                <h2>Countdown to Next Event</h2>
+                <div class="countdown-body">
+                    <div class="event-preview">
+                        <img src="" alt="Next event image" class="event-img" />
+                        <div class="event-meta">
+                            <h3 id="next-event-title">Fall/Winter 2026 Runway Show</h3>
+                            <p id="next-event-info">January 16, 2026 - 7:00PM - The Grand Atelier, New York</p>
+                            <div id="countdown-timer"
+                            data-datetime="2026-01-16T19:00:00"></div>
+                            <div class="countdown-actions">
+                                <button class="btn primary-btn" id="view-next">View More</button>
+                                <a href="#upcoming"
+                                class="btn secondary-btn scroll-link"> See all events</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        <div class="event-card">
-            <h2>Pop-Up Store Opening</h2>
-            <p>Date: January 10, 2026</p>
-            <p>Location: Abuja, Nigeria</p>
-            <button class="btn">Learn More</button>
-        </div>
+            <!-- UPCOMING EVENTS -->
+             <section id="upcoming"
+             class="section-wrapper">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid">
+                <article class="card event-card"
+                data-event-id="1" data-title="Fall/Winter 2026 Runway Show"
+                data-datetime="2026-01-16T19:00:00"
+                data-location="The Grand Atelier, New York">
+                <div class="card-media">
+                    <img src="" alt="Runway show" />
+                </div>
+                <div class="card-body">
+                    <h3>Fall/Winter 2026 Runway Show</h3>
+                    <p class="muted">January 16, 2026 - 7:00PM</p>
+                    <p class="excerpt">Experience the unveiling of our most anticipated collection yet - an eveing of haute expression.</p>
+                    <div class="card-actions">
+                        <button class="btn primary-btn view-more">View More</button>
+                        <a class="btn secondary-btn"
+                        href="#" role="button">Buy Tickets</a>
+                    </div>
+                </div>
+            </article>
 
-        <div class="event-card">
-            <h2>New Collection Launch</h2>
-            <p>Date: February 5, 2026</p>
-            <p>Location: Port Harcourt, Nigeria</p>
-            <button class="btn">Learn More</button>
-        </div>
-       </section>
+            <article class="card event-card"
+            data-event-id="2" data-title="Private Styling Workshop"
+            data-datetime="2026-02-20T16:00:00"
+            data-location="The Monarch Studio"> 
+            <div class="card-media">
+                <img src="" alt="Private styling workshop" />
+            </div>
+            <div class="card-body">
+                <h3>Private Styling Workshop</h3>
+                <p class="excerpt">Join our expert stylists for an exclusive workshop on curating your signature wardrobe. Limited to 25 guests.</p>
+                <div class="card-actions">
+                    <button class="btn primary-btn view-more">View More</button>
+                    <a class="btn secondary-btn"
+                    href="#" role="button">Reserve Spot</a>
+                </div>
+            </div>
+        </article>
+            </div>
+        </section>  
+        
+        <!-- PAST EVENTS -->
+         <section id="past"
+         class="section-wrapper">
+         <h2>Past Events</h2>
+         <div class="past-grid">
+            <article class="card small-card">
+                <img src="" alt="Past event 1" />
+                <h4>Spring/Summer 2025 Collection Launch</h4>
+                <p class="muted">April 2025</p>
+            </article>
+            <article class="card small-card">
+                <img src="" alt="Past event 2" />
+                <h4>Annual Gala & Charity Auction</h4>
+                <p class="muted">November 2024</p>
+            </article>
+            <article class="card small-card">
+                <img src="" alt="Past event 3" />
+                <h4>Designer Meet & Greet</h4>
+                <p class="muted">August 2024</p>
+            </article>
+         </div>
+        </section>
+            </main>
 
-       <!-- Simple JavaScript feature -->
-        <script>
-            // JavaScripts feature: highlight event cards when clicked
-            const cards = 
-            document.querySelectorAll('.event-card');
-            cards.forEach(card => {
-                card.addEventListener('click', () => 
-                {
-                    card.classList.toggle('highlight');
-                });
-                });     
-            </script>
-</body>
+            <!-- FOOTER -->
+             <footer class="site-footer">
+                <div class="page-wrapper footer-grid">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../products.html">Products</a></li>
+                            <li><a href="../events.html">Events</a></li>
+                            <li><a href="trustess.html">Board of Trustees</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Info</h4>
+                        <address>
+                            123 Fashion Avenue<br>
+                            New York, NY 10001<br>
+                            Phone: (555) 123-4567<br>
+                            Email: hello@themonarch.com
+                        </address>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Subscribe</h4>
+                        <p>Never miss an event. Join our newsletter.</p>
+                        <form id="subscribe-form">
+                            <input type="email"
+                            placeholder="Enter your email" required />
+                            <button class="btn primary-btn"
+                            type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+             </footer>
+
+             <!-- MODAL -->
+              <div class="modal-overlay" id="modal">
+                <div class="modal-content">
+                    <button class="modal-close-btn"
+                    id="modal-close">x</button>
+                </div>
+              </div>
+
+              <!-- JS -->
+               <script src="events.js"></script>
+         </header>
+    </body>
 </html>
