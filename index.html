@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Monarch | Home</title>
+  <link rel="stylesheet" href="homepagestyle.css" />
+  <link rel="stylesheet" href="monarch_utilities.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets\marquee.css">
+</head>
+<body>
+  <div class="marquee" data-page="home"></div>
+ <script src="assets/data.js"></script>
+  <script src="assets/marquee.js"></script>
+ <!-- ===== NAVIGATION BAR ===== -->
+<header class="navbar">
+  <div class="container">
+    <div class="logo">The Monarch</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#board">Board of Trustees</a></li>
+        <li><a href="#inquiries">Inquiries</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Elegance Redefined</h1>
+    <p id="hero-tagline">Discover the New Collection</p>
+    <a href="#" class="btn primary-btn">Shop Now</a>
+  </div>
+</section>
+
+  <!-- ===== FEATURED PRODUCTS SECTION ===== -->
+<section class="featured-products section-wrapper" id="featured-products">
+  <div class="page-wrapper">
+    <h2 class="section-title">New Arrivals</h2>
+    <p class="section-subtitle"><b></b>Experience timeless luxury in every piece.</b></p>
+
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/img1.jpg" alt="Product 1">
+        <h3>Silk Burgundy Gown</h3>
+        <p class="price">N350,000</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/img3.jpg" alt="Product 2">
+        <h3>Gold Statement Ring</h3>
+        <p class="price">N2,220,000</p>
+      </div>
+
+      <div class="product-card">
+        <img src="images/img2.jpg" alt="Product 3">
+        <h3>Classic Cream Bag</h3>
+        <p class="price">N280,000</p>
+      </div>
+    </div>
+    <div class="view-all-btn">
+  <a href="products.html" class="btn">View All Products</a>
+</div>
+</section>
+
+<!-- ================= ABOUT SECTION ================= -->
+  <section class="about">
+    <div class="about-container">
+      <h2>The Essence of The Monarch</h2>
+      <p>
+        At The Monarch, elegance is more than just fashion — it’s a lifestyle. 
+        Our collections are designed to embody sophistication, grace, and the timeless 
+        beauty of royal craftsmanship. Every thread, every detail, every piece 
+        tells a story of excellence and luxury. 
+      </p>
+    </div>
+  </section>
+<!-- Experience Luxury / Book Now Section -->
+<section class="experience-section">
+  <div class="experience-content">
+    <h2>Experience Luxury</h2>
+    <p>
+      Visit our atelier for a personalized styling experience.  
+      Book your private appointment today.
+    </p>
+    <a href="#inquiries" class="book-btn">Book Now</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-column">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Collections</a></li>
+        <li><a href="#">Sustainability</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Press</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Contact Info</h3>
+      <p>123 Fashion Avenue<br>Lekki, Lagos Nigeria</p>
+      <p>Phone: +234 080-123-4567<br>
+      Email: hello@themonarch.com</p>
+      <p>Hours: Mon–Sat 10AM–8PM</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <div class="newsletter">
+        <p>Subscribe to our newsletter</p>
+        <form>
+          <input type="email" placeholder="Your email" />
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 The Monarch. All rights reserved. Crafted with elegance.</p>
+  </div>
+</footer>
+
+<script>
+  const taglines = [
+    "Discover timeless luxury and sophistication with The Monarch Collection",
+    "Where Style Meets Sophistication",
+    "Luxury Tailored for You",
+    "Experience Timeless Craftsmanship"
+  ];
+
+  let index = 0;
+  const taglineElement = document.getElementById("hero-tagline");
+
+  setInterval(() => {
+    index = (index + 1) % taglines.length;
+    taglineElement.style.opacity = 0;
+    setTimeout(() => {
+      taglineElement.textContent = taglines[index];
+      taglineElement.style.opacity = 1;
+    }, 500);
+  }, 4000);
+</script>
+</body>
+</html>
