@@ -1,0 +1,191 @@
+/* Base container and logo */
+body {
+  /* margin: 0; */
+  transition: overflow 0.3s;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 900;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  height: 5rem;
+  border: none;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.header-container {
+  max-width: 1440px;
+  width: 98%;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2000; /* make sure container is above drawer toggle */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Drawer toggle button */
+#menu-toggle {
+  display: none;
+}
+
+.menu-toggle-label {
+  display: block;
+  cursor: pointer;
+  z-index: 2001; /* above drawer */
+}
+
+.menu-icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #333;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #333;
+  transition: all 0.3s;
+}
+
+.menu-icon::before {
+  top: -8px;
+}
+
+.menu-icon::after {
+  top: 8px;
+}
+
+/* Drawer menu (mobile) */
+.nav-menu {
+  display: none; /* hidden by default */
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 2000;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+#menu-toggle:checked ~ body {
+  overflow-y: hidden;
+}
+#menu-toggle:checked ~ .menu-toggle-label {
+  position: fixed;
+  /* left: ; */
+  right: 1rem;
+}
+/* Show drawer when checkbox is checked */
+#menu-toggle:checked ~ .nav-menu {
+  display: flex;
+}
+
+/* Disable page scroll when drawer is open */
+#menu-toggle:checked ~ .nav-menu {
+  overflow-y: auto;
+}
+#menu-toggle:checked ~ .nav-menu,
+#menu-toggle:checked ~ body {
+  overflow: hidden; /* stop body scrolling */
+}
+
+/* List inside drawer */
+.nav-menu ul.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-menu ul.nav-list li {
+  width: 100%;
+  text-align: center;
+}
+
+.nav-menu ul.nav-list li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding: 12px 0;
+  transition: color 0.3s;
+}
+
+.nav-menu ul.nav-list li a:hover {
+  color: #6b21a8;
+}
+
+/* Animate hamburger to X */
+#menu-toggle:checked + label .menu-icon {
+  background: transparent;
+}
+
+#menu-toggle:checked + label .menu-icon::before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked + label .menu-icon::after {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Desktop menu */
+@media (min-width: 640px) {
+  .menu-toggle-label {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    padding: 0;
+    gap: 24px;
+    box-shadow: none;
+    transition: none;
+    right: auto;
+    background-color: transparent;
+  }
+
+  .nav-menu ul.nav-list {
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .nav-menu ul.nav-list li a {
+    padding: 0;
+    font-size: 1rem;
+    margin: 0;
+    width: max-content
+  }
+}

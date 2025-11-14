@@ -177,3 +177,9 @@
     color: var(--color-text);
     line-height: 1.6;
 }
+
+@media (min-width: 640px) {
+    .board-header {
+        margin: 0;
+    }
+}

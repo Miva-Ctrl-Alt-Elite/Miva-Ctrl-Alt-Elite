@@ -41,6 +41,7 @@ body {
     color: var(--color-text);
     background-color: var(--color-cream);
     line-height: 1.6;
+    margin: 0;
 }
 
 /* Consistent look for all headings (font usage) */
