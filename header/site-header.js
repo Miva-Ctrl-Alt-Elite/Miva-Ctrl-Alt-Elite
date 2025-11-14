@@ -27,12 +27,4 @@ document.addEventListener("DOMContentLoaded", () => {
       </nav>
     </div>
   `;
-  // fetch("./header.html")
-  //   .then(res => {
-  //     if (!res.ok) throw new Error(`HTTP error: ${res.status}`);
-  //     return res.text();
-  //   })
-  //   .then(html => {
-  //   })
-  //   .catch(err => console.error("Failed to load header:", err));
 });
