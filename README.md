@@ -9,12 +9,21 @@ This project **The Monarch** is a **responsive 5-paged e-commerce website** to s
 
 ### Table of Contents 
 * [Overview](#overview)
+* [Live Demo](#live-demo)
 * [Screenshots](#screenshots)
 * [Features](#features)
 * [Technologies Used](#-technologies-used)
 * [DOM Structure](#dom-structure)
 * [How to Run](#-how-to-run)
+* [GitHub Pages Deployment](#github-pages-deployment)
 * [Acknowledgements](#acknowledgements)
+
+
+---
+
+
+### Live Demo
+🌐 **[View Live Website](https://miva-ctrl-alt-elite.github.io/Miva-Ctrl-Alt-Elite/)**
 
 
 ---
@@ -78,6 +87,28 @@ This project **The Monarch** is a **responsive 5-paged e-commerce website** to s
 3. Open the website
 - Double-click index.html in your file explorer or
 - Use Live Server in VS Code for live preview
+
+
+---
+
+
+## GitHub Pages Deployment
+
+This website is automatically deployed to GitHub Pages using GitHub Actions.
+
+### Setup Instructions
+1. Go to your repository Settings → Pages
+2. Under "Build and deployment":
+   - Source: Select "GitHub Actions"
+3. Push changes to the `main` branch to trigger automatic deployment
+
+### Manual Deployment
+You can also manually trigger a deployment:
+1. Go to the "Actions" tab in your repository
+2. Select the "Deploy to GitHub Pages" workflow
+3. Click "Run workflow"
+
+The site will be available at: `https://miva-ctrl-alt-elite.github.io/Miva-Ctrl-Alt-Elite/`
 
 
 ---
