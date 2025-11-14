@@ -11,187 +11,201 @@
 
 /* --- 1. CORE COLOR & TYPOGRAPHY VARIABLES (Must be defined for consistency) --- */
 :root {
-    /* Color Palette Variables (Ensures everyone uses the approved shades) */
-    --color-cream: #Faf9f6;          /* Faf9f6 */
-    --color-burgundy: #800020;      /* 800020 */
-    --color-gold: #CBB67b;          /* CBB67b */
-    --color-text: #1a1a1a;          /* 1a1a1a (Deep Black for primary text) */
+  /* Color Palette Variables (Ensures everyone uses the approved shades) */
+  --color-cream: #faf9f6; /* Faf9f6 */
+  --color-burgundy: #800020; /* 800020 */
+  --color-gold: #cbb67b; /* CBB67b */
+  --color-text: #1a1a1a; /* 1a1a1a (Deep Black for primary text) */
 
-    /* Typography */
-    --font-heading: 'Playfair Display', serif; /* Elegant font for titles and large text */
-    --font-body: 'Inter', sans-serif;         /* Clean, modern font for body content and interface */
-    --base-font-size: 16px;
+  /* Typography */
+  --font-heading: "Playfair Display", serif; /* Elegant font for titles and large text */
+  --font-body: "Inter", sans-serif; /* Clean, modern font for body content and interface */
+  --base-font-size: 16px;
 
-    /* Spacing & Sizing */
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 1.5rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 3rem;
-    --border-radius: 0.5rem; /* Standard rounded corners */
-    --transition-speed: 0.25s;
+  /* Spacing & Sizing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --border-radius: 0.5rem; /* Standard rounded corners */
+  --transition-speed: 0.25s;
 }
 
 /* --- 2. BASE STYLES & TYPOGRAPHY --- */
 
 /* Consistent look for all text and background */
 body {
-    font-family: var(--font-body);
-    font-size: var(--base-font-size);
-    color: var(--color-text);
-    background-color: var(--color-cream);
-    line-height: 1.6;
+  font-family: var(--font-body);
+  font-size: var(--base-font-size);
+  color: var(--color-text);
+  background-color: var(--color-cream);
+  line-height: 1.6;
 }
 
 /* Consistent look for all headings (font usage) */
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-heading);
-    color: var(--color-text);
-    margin-top: var(--spacing-sm);
-    margin-bottom: var(--spacing-sm);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  margin-top: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
 }
 
 /* --- 3. SHARED COMPONENTS: CARD (Based on product grid and board member layout) --- */
 
 /* Defines universal padding, rounded corners, and a very subtle shadow. */
 .card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; 
-    border-radius: var(--border-radius);
-    padding: var(--spacing-md); /* Consistent inner padding */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle lift */
-    background-color: white; /* Structural light background for contrast */
-    height: 100%;
-    transition: transform var(--transition-speed) ease-in-out;
-    border: 1px solid rgba(0, 0, 0, 0.05); /* Very light boundary line, visible on cream background */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md); /* Consistent inner padding */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle lift */
+  background-color: white; /* Structural light background for contrast */
+  height: 100%;
+  transition: transform var(--transition-speed) ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.05); /* Very light boundary line, visible on cream background */
 }
 
 .card:hover {
-    transform: translateY(-3px); /* Consistent lift on hover */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px); /* Consistent lift on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* --- 4. SHARED COMPONENTS: BUTTONS (Ensures consistent width, height, and responsiveness) --- */
 
 /* Base button styling for all interactive elements (shape, padding, font structure) */
 .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 150px; /* Ensures a minimum click target size based on sample site look */
-    padding: 0.75rem 1.75rem; /* Consistent vertical and horizontal padding */
-    border: 2px solid; /* Mandatory 2px border, color to be defined by page-specific CSS */
-    border-radius: var(--border-radius);
-    font-family: var(--font-body);
-    font-weight: 600; /* Semi-bold for high visibility */
-    text-transform: uppercase;
-    letter-spacing: 0.05em; /* Subtle spacing for luxury feel */
-    text-decoration: none;
-    cursor: pointer;
-    transition: all var(--transition-speed) ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px; /* Ensures a minimum click target size based on sample site look */
+  padding: 0.75rem 1.75rem; /* Consistent vertical and horizontal padding */
+  border: 2px solid; /* Mandatory 2px border, color to be defined by page-specific CSS */
+  border-radius: var(--border-radius);
+  font-family: var(--font-body);
+  font-weight: 600; /* Semi-bold for high visibility */
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* Subtle spacing for luxury feel */
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease-in-out;
 }
 
 /* Primary Button Structure (Solid fill look) - COLOR MUST BE ADDED BY DEVELOPER */
 .primary-btn {
-    /* Developers MUST define: background-color, color, and border-color here (e.g., burgundy fill). */
-    /* Structural defaults only — colors must be provided by component/theme CSS. */
-    white-space: nowrap; /* Prevent label wrapping for consistent button shape */
-    padding-inline: 1.75rem;
-    padding-block: 0.75rem;
-    align-items: center;
-    justify-content: center;
-    /* Use custom properties or component-specific CSS to supply colors and borders. */
+  /* Developers MUST define: background-color, color, and border-color here (e.g., burgundy fill). */
+  /* Structural defaults only — colors must be provided by component/theme CSS. */
+  white-space: nowrap; /* Prevent label wrapping for consistent button shape */
+  padding-inline: 1.75rem;
+  padding-block: 0.75rem;
+  align-items: center;
+  justify-content: center;
+  /* Use custom properties or component-specific CSS to supply colors and borders. */
 }
 
 .primary-btn:hover {
-    opacity: 0.95; /* Consistent slight dimming on hover */
-    transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent hover shadow */
+  opacity: 0.95; /* Consistent slight dimming on hover */
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Consistent hover shadow */
 }
 
 /* Secondary Button Structure (Outline look) - COLOR MUST BE ADDED BY DEVELOPER */
 .secondary-btn {
-    background-color: transparent; /* Ensures it is always an outline style */
-    /* Developers MUST define: color and border-color here (e.g., gold text/border). */
+  background-color: transparent; /* Ensures it is always an outline style */
+  /* Developers MUST define: color and border-color here (e.g., gold text/border). */
 }
 
 .secondary-btn:hover {
-    background-color: rgba(26, 26, 26, 0.05); /* Consistent subtle background on hover for outline buttons */
-    opacity: 1;
+  background-color: rgba(
+    26,
+    26,
+    26,
+    0.05
+  ); /* Consistent subtle background on hover for outline buttons */
+  opacity: 1;
 }
 
 /* --- 5. SHARED COMPONENTS: MODAL (Overlay and Content Container) --- */
 
 /* The full-screen overlay for the modal (Structure only) */
 .modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Consistent dark overlay */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity var(--transition-speed) ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Consistent dark overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-speed) ease;
 }
 
 /* Class to show the modal (toggled by JavaScript) */
 .modal-overlay.is-open {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 /* The actual content box for the modal (Structure only) */
 .modal-content {
-    background-color: var(--color-cream);
-    padding: var(--spacing-xl); /* Generous, consistent padding */
-    border-radius: var(--border-radius);
-    max-width: 700px; /* Consistent maximum width for detail views */
-    max-height: 90%;
-    overflow-y: auto;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    transform: scale(0.95);
-    transition: transform var(--transition-speed) ease;
-    position: relative;
+  background-color: var(--color-cream);
+  padding: var(--spacing-xl); /* Generous, consistent padding */
+  border-radius: var(--border-radius);
+  max-width: 700px; /* Consistent maximum width for detail views */
+  max-height: 90%;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transform: scale(0.95);
+  transition: transform var(--transition-speed) ease;
+  position: relative;
 }
 
 /* Consistent style for the close button within the modal */
 .modal-close-btn {
-    position: absolute;
-    top: var(--spacing-md);
-    right: var(--spacing-md);
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--color-text);
-    line-height: 1;
-    transition: color var(--transition-speed) ease;
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--color-text);
+  line-height: 1;
+  transition: color var(--transition-speed) ease;
 }
 
 .modal-close-btn:hover {
-    color: var(--color-burgundy); /* Using burgundy for the close icon hover is a safe, universal accent */
+  color: var(
+    --color-burgundy
+  ); /* Using burgundy for the close icon hover is a safe, universal accent */
 }
 
 /* --- 6. LAYOUT WRAPPERS (New additions for page and section structure) --- */
 
 /* Page Wrapper: Used to constrain the overall content width and center it on large screens. */
 .page-wrapper {
-    max-width: 1440px; /* Consistent max width for content readability on desktop */
-    margin: 0 auto; /* Center the wrapper horizontally */
-    padding: 0 var(--spacing-md); /* Consistent horizontal padding for mobile/tablet */
+  max-width: 1440px; /* Consistent max width for content readability on desktop */
+  margin: 0 auto; /* Center the wrapper horizontally */
+  padding: 0 var(--spacing-md); /* Consistent horizontal padding for mobile/tablet */
 }
 
 /* Section Wrapper: Used to define consistent vertical spacing between major page sections. */
 .section-wrapper {
-    padding-top: var(--spacing-xl); /* Generous top padding for separation */
-    padding-bottom: var(--spacing-xl); /* Generous bottom padding for separation */
-    /* Note: Use .page-wrapper inside this to constrain content, or apply this to content inside .page-wrapper. */
+  padding-top: var(--spacing-xl); /* Generous top padding for separation */
+  padding-bottom: var(
+    --spacing-xl
+  ); /* Generous bottom padding for separation */
+  /* Note: Use .page-wrapper inside this to constrain content, or apply this to content inside .page-wrapper. */
 }
 /*
 ===============================================================================================
@@ -201,99 +215,96 @@ EVENTS PAGE COMPONENTS & NAVIGATION (Author: Tari - Events Page)
 
 /*--- NAVIGATION BAR --- */
 .navbar {
-    background-color: var(--color-cream);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    padding: var(--spacing-sm)
-    var(--spacing-lg);
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  background-color: var(--color-cream);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-links {
-    display: flex;
-    gap: var(--spacing-lg);
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  gap: var(--spacing-lg);
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-    font-family: var(--font-body);
-    text-decoration: none;
-    color: var(--color-text);
-    font-weight: 500:
-    transition: color var(--transition-speed)ease;
+  font-family: var(--font-body);
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  transition: color var(--transition-speed) ease;
 }
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: var(--color-burgundy);
+  color: var(--color-burgundy);
 }
 
 /*--- EVENT GRID ---*/
 #events-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: var(--spacing-lg);
-    padding: var(--spacing-xl)
-    var(--spacing-lg);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl) var(--spacing-lg);
 }
 
 /*--- EVENT CARD ---*/
 .event-card {
-    background-color: white;
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 10px rgba (0, 0, 0, 0.05);
-    padding: var(--spacing-md);
-    text-align: center;
-    transition: transform
-    var(--transition-speed) ease, box-shadow 
-    var(--transition-speed) ease;
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 10px rgba (0, 0, 0, 0.05);
+  padding: var(--spacing-md);
+  text-align: center;
+  transition: transform var(--transition-speed) ease,
+    box-shadow var(--transition-speed) ease;
 }
 
 .event-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
 
-event-card: h2 {
-    font-family: var(--font-heading);
-    color: var(--color-burgundy);
-    margin-bottom: var(--spacing-sm);
+.event-card h2 {
+  font-family: var(--font-heading);
+  color: var(--color-burgundy);
+  margin-bottom: var(--spacing-sm);
 }
 
 .event-card p {
-    color: var(--color-text);
-    margin: var(--spacing-xs) 0;
+  color: var(--color-text);
+  margin: var(--spacing-xs) 0;
 }
 
 .event-card .btn {
-    background-color: var(--color-gold);
-    border-color: var(--color-gold);
-    color: white;
+  background-color: var(--color-gold);
+  border-color: var(--color-gold);
+  color: white;
 }
 
 .event-card .btn:hover {
-    background-color: var(--color-burgundy);
-    border-color: var(--color-burgundy);
+  background-color: var(--color-burgundy);
+  border-color: var(--color-burgundy);
 }
 
 /*--- JS HIGHLIGHT EFFECT ---*/
 .highlight {
-    border: 2px solid var(--color-gold);
-    transform: scale(1.03);
-    box-shadow: 0 0 12px rgba(203, 182, 123, 0.6);
+  border: 2px solid var(--color-gold);
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(203, 182, 123, 0.6);
 }
 
 /*--- MARQUEE STYLING (Shared across pages) ---*/
 marquee {
-    background-color: var(--color-burgundy);
-    color: var(--color-cream);
-    padding: 0.5rem;
-    font-weight: 500;
-    font-family: var(--font-body);
-    letter-spacing: 0.5px;
+  background-color: var(--color-burgundy);
+  color: var(--color-cream);
+  padding: 0.5rem;
+  font-weight: 500;
+  font-family: var(--font-body);
+  letter-spacing: 0.5px;
 }

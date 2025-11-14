@@ -16,144 +16,152 @@
     <script src="../assets/data.js"></script>
     <script src="../assets/marquee.js"></script>
     <!-- SITE NAVIGATION -->
-    <header class="site-header">
-      <!-- MAIN PAGE CONTENT -->
-      <main class="page-wrapper section-wrapper" id="main">
-        <h1 class="page-title">Events</h1>
-
-        <!-- COUNTDOWN -->
-        <section id="countdown-section" class="countdown card">
-          <h2>Countdown to Next Event</h2>
-          <div class="countdown-body">
-            <div class="event-preview">
-              <img
-                src="https://images.unsplash.com/photo-1747171693567-702799baae9c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cnVud2F5JTIwZmFzaGlvbiUyMGJsYWNrJTIwcGVvcGxlfGVufDB8fDB8fHww"
-                alt="Next event image"
-                class="event-img"
-              />
-              <div class="event-meta">
-                <h3 id="next-event-title">Fall/Winter 2026 Runway Show</h3>
-                <p id="next-event-info">
-                  January 16, 2026 - 7:00PM - The Grand Atelier, New York
-                </p>
-                <div
-                  id="countdown-timer"
-                  data-datetime="2026-01-16T19:00:00"
-                ></div>
-                <div class="countdown-actions">
-                  <button class="btn primary-btn" id="view-next">
-                    View More
-                  </button>
-                  <a href="#upcoming" class="btn secondary-btn scroll-link">
-                    See all events</a
-                  >
-                </div>
+    <header class="section-wrapper board-header">
+      <h1 class="board-header">Events</h1>
+      <hr class="divider" />
+      <p class="board-p">
+        Discover the latest happenings at The Monarch. From exclusive runway
+        shows to intimate styling workshops, our events are designed to immerse
+        you in the world of high fashion. Stay tuned for updates and be part of
+        our vibrant community.
+      </p>
+    </header>
+    <main class="page-wrapper section-wrapper" id="main">
+      <!-- COUNTDOWN -->
+      <section id="countdown-section" class="countdown card">
+        <h2>Countdown to Next Event</h2>
+        <div class="countdown-body">
+          <div class="event-preview">
+            <img
+              src="https://images.unsplash.com/photo-1747171693567-702799baae9c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cnVud2F5JTIwZmFzaGlvbiUyMGJsYWNrJTIwcGVvcGxlfGVufDB8fDB8fHww"
+              alt="Next event image"
+              class="event-img"
+            />
+            <div class="event-meta">
+              <h3 id="next-event-title">Fall/Winter 2026 Runway Show</h3>
+              <p id="next-event-info">
+                January 16, 2026 - 7:00PM - The Grand Atelier, New York
+              </p>
+              <div
+                id="countdown-timer"
+                data-datetime="2026-01-16T19:00:00"
+              ></div>
+              <div class="countdown-actions">
+                <button class="btn primary-btn" id="view-next">
+                  View More
+                </button>
+                <a href="#upcoming" class="btn secondary-btn scroll-link">
+                  See all events</a
+                >
               </div>
             </div>
           </div>
-        </section>
-
-        <!-- UPCOMING EVENTS -->
-        <section id="upcoming" class="section-wrapper">
-          <h2>Upcoming Events</h2>
-          <div class="events-grid">
-            <article
-              class="card event-card"
-              data-event-id="1"
-              data-title="Fall/Winter 2026 Runway Show"
-              data-datetime="2026-01-16T19:00:00"
-              data-location="The Grand Atelier, New York"
-            >
-              <div class="card-media">
-                <img
-                  src="https://unsplash.com/photos/a-man-standing-on-a-stage-in-front-of-a-crowd-of-people-JfYu7iwHhe0"
-                  alt="Runway show"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Fall/Winter 2026 Runway Show</h3>
-                <p class="muted">January 16, 2026 - 7:00PM</p>
-                <p class="excerpt">
-                  Experience the unveiling of our most anticipated collection
-                  yet - an eveing of haute expression.
-                </p>
-                <div class="card-actions">
-                  <button class="btn primary-btn view-more">View More</button>
-                  <a class="btn secondary-btn" href="#" role="button"
-                    >Buy Tickets</a
-                  >
-                </div>
-              </div>
-            </article>
-
-            <article
-              class="card event-card"
-              data-event-id="2"
-              data-title="Private Styling Workshop"
-              data-datetime="2026-02-20T16:00:00"
-              data-location="The Monarch Studio"
-            >
-              <div class="card-media">
-                <img
-                  src="https://images.unsplash.com/photo-1733322992706-1210ca79f4df?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  alt="Private styling workshop"
-                />
-              </div>
-              <div class="card-body">
-                <h3>Private Styling Workshop</h3>
-                <p class="excerpt">
-                  Join our expert stylists for an exclusive workshop on curating
-                  your signature wardrobe. Limited to 25 guests.
-                </p>
-                <div class="card-actions">
-                  <button class="btn primary-btn view-more">View More</button>
-                  <a class="btn secondary-btn" href="#" role="button"
-                    >Reserve Spot</a
-                  >
-                </div>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- PAST EVENTS -->
-        <section id="past" class="section-wrapper">
-          <h2>Past Events</h2>
-          <div class="past-grid">
-            <article class="card small-card">
-              <img
-                src="https://plus.unsplash.com/premium_photo-1708589337293-283eca955f45?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI4fHx8ZW58MHx8fHx8"
-                alt="Past event 1"
-              />
-              <h4>Spring/Summer 2025 Collection Launch</h4>
-              <p class="muted">April 2025</p>
-            </article>
-            <article class="card small-card">
-              <img
-                src="https://images.unsplash.com/photo-1733324961705-97bd6cd7f4ba?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cnVud2F5JTIwZmFzaGlvbiUyMGJsYWNrJTIwcGVvcGxlfGVufDB8fDB8fHww"
-                alt="Past event 2"
-              />
-              <h4>Annual Gala & Charity Auction</h4>
-              <p class="muted">November 2024</p>
-            </article>
-            <article class="card small-card">
-              <img src="" alt="Past event 3" />
-              <h4>Designer Meet & Greet</h4>
-              <p class="muted">August 2024</p>
-            </article>
-          </div>
-        </section>
-      </main>
-
-      <!-- MODAL -->
-      <div class="modal-overlay" id="modal">
-        <div class="modal-content">
-          <button class="modal-close-btn" id="modal-close">x</button>
         </div>
-      </div>
+      </section>
 
-      <!-- JS -->
-      <script src="events.js"></script>
-    </header>
+      <!-- UPCOMING EVENTS -->
+      <section id="upcoming" class="section-wrapper">
+        <h2>Upcoming Events</h2>
+        <div class="events-grid">
+          <article
+            class="card event-card"
+            data-event-id="1"
+            data-title="Fall/Winter 2026 Runway Show"
+            data-datetime="2026-01-16T19:00:00"
+            data-location="The Grand Atelier, New York"
+          >
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1733322986999-2ce54a7c6d0d?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHJ1bndheSUyMGZhc2hpb24lMjBibGFjayUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+                alt="Runway show"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Fall/Winter 2026 Runway Show</h3>
+              <p class="muted">January 16, 2026 - 7:00PM</p>
+              <p class="excerpt">
+                Experience the unveiling of our most anticipated collection yet
+                - an eveing of haute expression.
+              </p>
+              <div class="card-actions">
+                <button class="btn primary-btn view-more">View More</button>
+                <a class="btn secondary-btn" href="#" role="button"
+                  >Buy Tickets</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="card event-card"
+            data-event-id="2"
+            data-title="Private Styling Workshop"
+            data-datetime="2026-02-20T16:00:00"
+            data-location="The Monarch Studio"
+          >
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1733322992706-1210ca79f4df?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Private styling workshop"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Private Styling Workshop</h3>
+              <p class="excerpt">
+                Join our expert stylists for an exclusive workshop on curating
+                your signature wardrobe. Limited to 25 guests.
+              </p>
+              <div class="card-actions">
+                <button class="btn primary-btn view-more">View More</button>
+                <a class="btn secondary-btn" href="#" role="button"
+                  >Reserve Spot</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PAST EVENTS -->
+      <section id="past" class="section-wrapper">
+        <h2>Past Events</h2>
+        <div class="past-grid">
+          <article class="card small-card">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1708589337293-283eca955f45?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI4fHx8ZW58MHx8fHx8"
+              alt="Past event 1"
+            />
+            <h4>Spring/Summer 2025 Collection Launch</h4>
+            <p class="muted">April 2025</p>
+          </article>
+          <article class="card small-card">
+            <img
+              src="https://images.unsplash.com/photo-1485570661444-73b3f0ff9d2f?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fHJ1bndheSUyMGZhc2hpb24lMjBibGFjayUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Past event 2"
+            />
+            <h4>Annual Gala & Charity Auction</h4>
+            <p class="muted">November 2024</p>
+          </article>
+          <article class="card small-card">
+            <img
+              src="https://images.unsplash.com/photo-1747171551392-9d47576e6186?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHJ1bndheSUyMGZhc2hpb24lMjBibGFjayUyMHBlb3BsZXxlbnwwfHwwfHx8MA%3D%3D"
+              alt="Past event 3"
+            />
+            <h4>Designer Meet & Greet</h4>
+            <p class="muted">August 2024</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- MODAL -->
+    <div class="modal-overlay" id="modal">
+      <div class="modal-content">
+        <button class="modal-close-btn" id="modal-close">x</button>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="events.js"></script>
   </body>
 </html>
