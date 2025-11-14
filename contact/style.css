@@ -49,12 +49,12 @@ header {
 }
 
 /* Main Layout */
-main {
+/* main {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   padding: 60px;
-}
+} */
 
 /* Card Sections */
 .card {
@@ -63,7 +63,7 @@ main {
   border-radius: 8px;
   padding: 32px;
   flex: 1;
-  min-width: 300px;
+  max-width: 350px;
   box-shadow: 0 4px 12px rgba(128, 0, 32, 0.1);
 }
 
@@ -205,4 +205,25 @@ footer {
   margin-top: 40px;
   font-size: 14px;
   color: #cbb67b;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3rem 2rem;
+  align-items: center;
+}
+.flex .card {
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: max-content;
+  }
 }
