@@ -5,7 +5,10 @@
   white-space: nowrap;
   background: #800020;
   color: #faf9f6;
-  padding: 12px 0;
+  /* padding: 12px 0; */
+  height: 2rem;
+  display: flex;
+  justify-content: center;
   font-size: 1.1rem;
   text-transform: capitalize;
   top:5rem;

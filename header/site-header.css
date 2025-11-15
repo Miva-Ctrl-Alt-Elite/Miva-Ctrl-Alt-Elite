@@ -21,6 +21,7 @@ body::-webkit-scrollbar {
   height: 5rem;
   border: none;
   box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  background-color: var(--color-cream);
 }
 
 .header-container {
@@ -140,7 +141,7 @@ body::-webkit-scrollbar {
 }
 
 .nav-menu ul.nav-list li a:hover {
-  color: #6b21a8;
+  color: var(--color-gold);
 }
 
 /* Animate hamburger to X */

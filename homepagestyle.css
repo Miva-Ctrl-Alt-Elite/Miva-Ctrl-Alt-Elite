@@ -1,65 +1,27 @@
- /* ===== NAVBAR ===== */
-.navbar {
-  background-color: var(--color-cream);
-  padding: var(--spacing-sm) var(--spacing-lg);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.navbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-burgundy);
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: var(--spacing-md);
-}
-
-.nav-links a {
-  text-decoration: none;
-  font-family: var(--font-body);
-  font-weight: 600;
-  color: var(--color-text);
-  position: relative;
-  transition: color var(--transition-speed) ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
-  color: var(--color-burgundy);
-}
-
-
 /* ---- HERO SECTION (classic luxury burgundy + parallax) ---- */
 .hero {
-  background-image: url('images/img4.jpg') center cover no-repeat;
+  /* background-image: url("./images/img4.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://media.istockphoto.com/id/2188740126/photo/young-woman-posing-for-photos-on-etretat-cliff-at-sunset.webp?a=1&b=1&s=612x612&w=0&k=20&c=F8chlPI73SuZtp2Awezi3DL9M4FD0G3zYW46k-4bVH8=");
   height: 85vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: var(--color-cream);
-  position: relative;
+  margin-top: 5rem;
+  /* position: relative; */
+
 }
 
-.hero::after {
+/* .hero::after {
   content: '';
   position: absolute;
   inset: 0;
    background-color:var(--color-burgundy);
-}
+} */
 
 .hero-content {
   position: relative;
@@ -298,101 +260,6 @@
   background-color: var(--color-cream);
   color: var(--color-burgundy);
   transform: translateY(-2px);
-}
-/* ================= FOOTER ================= */
-/* ---- FOOTER STYLES ---- */
-/* ===== FOOTER ===== */
-.footer {
-  background-color: var(--color-burgundy); /* your main burgundy */
-  color: var(--color-cream);
-  padding: 4rem 2rem;
-  text-align: center;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-column {
-  flex: 1 1 250px;
-  max-width: 300px;
-  text-align: left;
-}
-
-.footer-column h3 {
-  color: var(--color-gold);
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.footer-column ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-column ul li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-column ul li a {
-  color: var(--color-cream);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-column ul li a:hover {
-  color: var(--color-gold);
-}
-
-.footer .social-icons a {
-  color: var(--color-cream);
-  margin-right: 1rem;
-  font-size: 1.1rem;
-  transition: color 0.3s ease;
-}
-
-.footer .social-icons a:hover {
-  color: var(--color-gold);
-}
-
-.footer .newsletter input {
-  padding: 0.6rem;
-  border: 1px solid var(--color-gold);
-  background: transparent;
-  color: var(--color-cream);
-  margin-right: 0.5rem;
-  border-radius: 4px;
-}
-
-.footer .newsletter button {
-  background-color: var(--color-gold);
-  color: var(--color-burgundy);
-  border: none;
-  padding: 0.6rem 1rem;
-  border-radius: 4px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.footer .newsletter button:hover {
-  background-color: var(--color-cream);
-  color: var(--color-burgundy);
-}
-
-.footer-bottom {
-  border-top: 1px solid var(--color-gold);
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
-  color: var(--color-cream);
-  font-size: 0.9rem;
 }
 
 /* ---- ANIMATIONS ---- */

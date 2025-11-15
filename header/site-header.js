@@ -18,11 +18,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       <!-- Navigation -->
       <nav class="nav-menu">
-        <ul class="nav-list"><li><a href="/">Home</a></li>
-        <li><a href="/about">About Us</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/board">Board of Trustees</a></li>
-        <li><a href="/inquiries">Inquiries</a></li>
+        <ul class="nav-list"><li><a href="./index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="./board-of-trustees.html">Board of Trustees</a></li>
+        <li><a href="./contact.html">Inquiries</a></li>
         </ul>
       </nav>
     </div>

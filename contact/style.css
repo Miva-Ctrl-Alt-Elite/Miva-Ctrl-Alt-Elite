@@ -57,18 +57,26 @@ header {
 } */
 
 /* Card Sections */
-.card {
+.contact-card {
   background-color: #fff;
   border: 1px solid #cbb67b;
   border-radius: 8px;
-  padding: 32px;
-  flex: 1;
-  max-width: 350px;
   box-shadow: 0 4px 12px rgba(128, 0, 32, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: .9rem;
+}
+
+form {
+  width: 95%;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .card h2 {
-  font-family: "Playfair Display", serif;
   font-size: 28px;
   margin-bottom: 12px;
   color: #800020;
@@ -89,8 +97,9 @@ form label {
 
 form input,
 form textarea {
-  width: 100%;
-  padding: 12px;
+  width: 90%;
+  line-height: 2rem;
+  padding: 0 1.5rem;
   border: 1px solid #cbb67b;
   border-radius: 4px;
   background-color: #faf9f6;
@@ -105,6 +114,7 @@ form textarea {
 
 .grid-2 {
   display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -210,8 +220,8 @@ footer {
 .flex {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 3rem 2rem;
+  gap: 3rem;
+  padding: 8rem 0;
   align-items: center;
 }
 .flex .card {
@@ -222,8 +232,11 @@ footer {
   .flex {
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 10rem 0;
   }
-  .card {
-    width: max-content;
+  .contact-card {
+    max-width: 40%;
+    min-width: max-content;
   }
 }
