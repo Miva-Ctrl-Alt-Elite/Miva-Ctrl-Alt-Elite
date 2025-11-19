@@ -1,21 +1,22 @@
-## Documentation
+# Miva-Ctrl-Alt-Elite
 
-### Overview
+## Overview
 This project **The Monarch** is a **responsive 5-paged e-commerce website** to showcase a fashion brand's collections, introduce it's team, highlight upcoming events, and allow visitors to easily book appointments or enquiries. The website provides a smooth user journey across multiple pages, from the home page to product showcases, team profiles, event listings, and contact forms while maintaining consistent navigation, visual appeal and clear call-to-action elements throughout.
 
 
 ---
 
 
-### Table of Contents 
+## Table of Contents 
 * [Overview](#overview)
 * [Live Demo](#live-demo)
 * [Screenshots](#screenshots)
 * [Features](#features)
-* [Technologies Used](#-technologies-used)
+* [Technologies Used](#technologies-used)
 * [DOM Structure](#dom-structure)
 * [How to Run](#-how-to-run)
 * [GitHub Pages Deployment](#github-pages-deployment)
+* [How to Run](#how-to-run)
 * [Acknowledgements](#acknowledgements)
 
 
@@ -30,14 +31,28 @@ This project **The Monarch** is a **responsive 5-paged e-commerce website** to s
 
 
 ### Screenshots
+## Screenshots
 
-#### Home Page
+### Home Page
 ![Home Page](screenshots/home.png)
+
+### Products
+![Products](screenshots/products.png)
+
+### Board of Trustees
+![Board of Trustees](screenshots/trustees.png)
+
+### Inquiries
+![Inquiries](screenshots/inquiries.png)
+
+### Events
+![Events](screenshots/events.png)
 
 
 ---
 
-### Features
+
+## Features
 -  **Responsive Design:** Seamlessly adapts to all devices including mobile, tablet, and desktop.
 - **Interactive Elements:** Engaging carousels,hover effects, and click interactions to enhance user experience.
 - **Product Showcase:** Grid layout with organized categories, images, descriptions, and quick access to booking or contact options.
@@ -46,6 +61,31 @@ This project **The Monarch** is a **responsive 5-paged e-commerce website** to s
 - **Contact and Appointment:** User-friendly forms for inquiries and appointment bookings featuring validation with success or error alerts
 - **Consistent Navigation & Layout:** Persistent navbar and footer across all pages, including active link highlights for easy navigation
 - **Accessibility and Visual Appeal:** Designed with readability, contrast, and interactive visual elements in mind.
+- **Global Marquee Banner:** This project includes a dynamic site-wide scrolling banner that displays page-specific announcements.
+   ### Key Features
+   - Page specific messages from a single data file (assets/data.js)
+   - Automatic rendering via assets/marquee.js
+   - Smooth infinite scrolling with CSS animation
+   - Hover to pause for better readability
+   - Centralized control for easy updates
+
+   ### Usage
+      ```html
+   <!-- Include the marquee CSS -->
+   <link rel="stylesheet" href="assets/marquee.css">
+
+   <!-- Add the marquee container anywhere in your page -->
+   <div class="marquee" data-page="home"></div>
+
+   <!-- Load the data and script files after the marquee container -->
+   <script src="assets/data.js"></script>
+   <script src="assets/marquee.js"></script>
+   ```
+   data-page must match a key in assets/data.js (e.g., home, evens, products, trustees, contact).
+
+- **Global Navbar:**
+
+- **Global Footer:**
 
 
 ---

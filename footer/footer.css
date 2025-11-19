@@ -1,0 +1,139 @@
+#footer {
+    padding: 3rem 0;
+    background-color: var(--color-burgundy);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-container {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.footer-container > .footer-column {
+    width: 90%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container > .footer-column > h3 {
+    font-style: bold;
+    /* font-size: 1rem; */
+    color: var(--color-gold);
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+
+.footer-container > .footer-column {
+    color: #fff;
+}
+
+.footer-container > .footer-column > ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+        .footer-container > .footer-column > ul > li {
+            height: max-content;
+            width: max-content;
+            padding: .7rem 0;
+        }
+
+    .footer-container > .footer-column > ul > li > a {
+        text-decoration: none;
+        color: #fff;
+       padding: 2rem 0;
+    }
+
+    .footer-container > .footer-column > p {
+       
+    }
+
+    .footer-bottom {
+        color: #fff;
+        font-size: 0.9rem;
+        margin-top: 2rem;
+    }
+
+    .newsletter  {
+        margin-top: 6rem;
+    }
+
+    .newsletter > form  {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+    }
+
+    .newsletter > form > input {
+        padding: .9rem .5rem;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        background-color: transparent;
+        outline: none;
+        border: 1px solid #fff;
+        border-radius: 2px 0 0 2px;
+        color: #fff;
+        flex:1;
+    }
+
+    .newsletter > form > input::placeholder {
+        color: #fff;
+    }
+
+
+    .newsletter > form > button {
+        background-color: #fff;
+        border: 0;
+        padding: 0 1rem;
+        border-radius: 0 2px 2px 0;
+    }
+
+    .newsletter > form > button > svg {
+        fill: #000;
+        transform: rotate(45deg);
+        width: 10px;
+        height: 10px;
+    }
+
+    .social-icons  {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        row-gap: 4rem;
+    }
+
+    .social-icons > a {
+        color: #fff;
+    }
+
+    .social-icons > a > i {
+        margin-right: 2rem;
+    }
+
+    .social-icons > a > i::before {
+        font-size: 2rem;
+    }
+
+
+@media (min-width: 640px) {
+    #footer {
+        align-items: center;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+}
+
