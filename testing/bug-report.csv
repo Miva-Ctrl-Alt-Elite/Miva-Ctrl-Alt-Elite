@@ -1,0 +1,3 @@
+Bug ID,Page,Description,Steps to Reproduce,Expected,Actual,Status,Date
+B-001,event.html,Horizontal scroll on small screens,Resize to 320px,No overflow,,,
+B-002,product.html,Cart not updating on Safari,Add to cart on Safari,Counter increments,,,

@@ -1,0 +1,8 @@
+Test ID,Page,Feature,Steps,Expected Result,Actual Result,Pass/Fail,Notes
+H-01,index.html,Marquee,Open page,Marquee scrolls smoothly,,,
+P-01,product.html,Add to Cart,Click Add to Cart,Cart counter increases and persists,,,
+C-01,contact.html,Form validation,Submit empty form,Inline error message appears,,,
+B-01,board.html,Trustee modal,Click image,Bio modal opens and closes,,,
+E-01,event.html,Countdown,Open event page,Countdown runs with correct time,,,
+G-01,All pages,Navigation,Click each link,Loads correct page with same navbar,,,
+
